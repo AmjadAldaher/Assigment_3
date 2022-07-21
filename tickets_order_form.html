@@ -55,31 +55,61 @@
 			<label for="City"> City: </label>
 			<input type="text" name="City" id="City"><br>
 			<label for="Province"> Province: </label>
-			<input type="text" name="Province" id="Province" maxlength="2"><br>
+			<input type="text" name="Province" id="Province" maxlength="2" placeholder="2-Character code"><br>
 			<label for="PostalCode:"> Postal Code: </label>
-			<input type="text" name="PostalCode" id="PostalCode" maxlength="6"><br>
+			<input type="text" name="PostalCode" id="PostalCode" maxlength="6" placeholder="6 Characters" ><br>
 			<label for="PhoneNumber:">Phone Number: </label>
-			<input type="text" name="PhoneNumber" id="PhoneNumber"><br>
+			<input type="text" name="PhoneNumber" id="PhoneNumber" placeholder="999-999-9999"><br>
 			</fieldset>
-		</form>
-		</section>
-
-		<section>
-			<form>
 			<fieldset>
-			<legend> Ordering Information</legend>
-			<label for="Event"> Event: </label>
-				<select type="text" id="Event"><br>
-					<option value="C">Cookie Decoration Contest</option>
-					<option value="T">Tree Decoration Contest</option>
-					<option value="G">Gift of Light Ride-Along</option>
-					<option value="B">Breakfast with Santa</option>
-		
-		</form>
-			
-			</section>
+				<legend> Ordering Information</legend>
+				<label for="Event"> Event: </label>
+					<select type="text" id="Event"><br>
+						<option value="C">Cookie Decoration Contest</option>
+						<option value="T">Tree Decoration Contest</option>
+						<option value="G">Gift of Light Ride-Along</option>
+						<option value="B">Breakfast with Santa</option>
+					</select>
 
-				
+				<label for="OrderType"> Order Type: </label>
+					<select type="text" id="OrderType"><br>
+						<option value="M">Member Package</option>
+						<option value="D">Donor Package</option>
+						<option value="S">Single Tickets</option>
+					</select>
+					<label for="NumberofTecketsr:">Number of Teckets: </label>
+					<input type="text" name="NumberofTecketsr" id="NumberofTecketsr" placeholder="Number of single tickets"><br>
+
+					<fieldset>
+						<legend> Payment Method </legend>
+					<label for="Bill ME"> Bill Me  </label>
+					<input type="radio" name="Bill ME" ><br>
+					<label for="Credit Card"> Credit Card  </label>
+					<input type="radio" name="Credit Card" ><br>
+					</fieldset>
+					
+					<fieldset>
+					<legend> Credit Card Information </legend>
+					<label for="CardType"> CardType:  </label>
+					<select type="text" id="Event"><br>
+						<option value="V">Visa</option>
+						<option value="M">Master Card</option>
+						<option value="D">Discover</option>
+					</select>
+
+					<label for="CardNumber">Card Number: </label>
+			<input type="text" name="CardNumber" id="CardNumber" placeholder="16 digits"><br>
+			<fieldset id="buttons">
+				<legend>Submit Your Data</legend>
+				<label>&nbsp;</label>
+				<input type="submit" id="submit" value="Submit">
+				<input type="reset" id="reset" value="Reset Fields">
+			</fieldset>
+
+					</fieldset>
+
+		</form>
+		</section>	
 			</main>
 			
 			<footer>
