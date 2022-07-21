@@ -47,15 +47,15 @@
 			<label for="email"> E-Mail: </label>
 			<input type="text" name="email" id="email"><br>
 			<label for="firstname"> First Name: </label>
-			<input type="text" name="firstname" id="firstname"><br>
-			<label for="lastname"> Last Name: </label>
-			<input type="text" name="lastname" id="lastname"><br>
+			<input type="text" name="firstname" id="firstname" required=""><br>
+			<label for="lastname"> Last Name: </label> 
+			<input type="text" name="lastname" id="lastname" required=""><br>
 			<label for="address"> Address:</label>
-			<input type="text" name="address" id="address"><br>
+			<input type="text" name="address" id="address" ><br>
 			<label for="City"> City: </label>
-			<input type="text" name="City" id="City"><br>
+			<input type="text" name="City" id="City" required=""><br>
 			<label for="Province"> Province: </label>
-			<input type="text" name="Province" id="Province" maxlength="2" placeholder="2-Character code"><br>
+			<input type="text" name="Province" id="Province" maxlength="2" placeholder="2-Character code" required=""><br>
 			<label for="PostalCode:"> Postal Code: </label>
 			<input type="text" name="PostalCode" id="PostalCode" maxlength="6" placeholder="6 Characters" ><br>
 			<label for="PhoneNumber:">Phone Number: </label>
@@ -83,10 +83,10 @@
 				</fieldset>
 					<fieldset>
 						<legend> Payment Method </legend>
-					<label for="Bill ME"> Bill Me  </label>
-					<input type="radio" name="Bill ME" ><br>
-					<label for="Credit Card"> Credit Card  </label>
-					<input type="radio" name="Credit Card" ><br>
+					<label for="BillME" id="billme"> Bill Me  </label>
+					<input type="radio" name="BillME" ><br>
+					<label for="CreditCard" id="CreditCard"> Credit Card  </label>
+					<input type="radio" name="CreditCard" ><br>
 					</fieldset>
 					
 					<fieldset>
@@ -98,18 +98,45 @@
 						<option value="D">Discover</option>
 					</select><br>
 
-					<label for="CardNumber">Card Number: </label>
-			<input type="text" name="CardNumber" id="CardNumber" placeholder="16 digits"><br>
+					<label for="CardNumber" >Card Number: </label>
+			<input type="text" name="CardNumber" id="CardNumber" placeholder="16 digits" required=""><br>
+			
+			<label for="ExpirationDate"> Expiration Date: </label>
+			<select type="month" id="month">
+						<option value="01">January</option>
+						<option value="02">February</option>
+						<option value="03">March</option>
+						<option value="04">April</option>
+						<option value="05">May</option>
+						<option value="06">June</option>
+						<option value="07">July</option>
+						<option value="08">August</option>
+						<option value="09">September</option>
+						<option value="10">October</option>
+						<option value="11">November</option>
+						<option value="12">December</option>on>
+						</select> 
+				<select name="year" id="year">
+          <option value="2030">2030</option>
+          <option value="2029">2029</option>
+          <option value="2028">2028</option>
+          <option value="2027">2027</option>
+          <option value="2026">2026</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+		  </select>
+				
+			
 			</fieldset>
 			<fieldset id="Submit">
 				<legend>Submit Your Data</legend>
-				<input type="submit" id="submit" value="Submit">
-				<input type="reset" id="reset" value="Reset Fields">
+				<input type="submit" id="Submit" value="Submit">
+				<input type="reset" id="Submit" value="Reset Fields">
 			</fieldset>
-
-					
-
-		</form>
+			</form>
 		</section>	
 			</main>
 			

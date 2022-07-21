@@ -14,7 +14,7 @@ fieldset {
     padding-top: .5em;
 }
 legend {
-    color: gray;
+    color: #929090;
     font-weight: bold;
     font-size: 85%;
     margin-bottom: .5em;
@@ -36,9 +36,7 @@ select#Event {
 	width: 15em;
 }
 
-input#NumberofTecketsr{
-	width: 15em;
-}
+
 input:required, input[required] {
 	border: 2px solid  orange;
 }
@@ -48,22 +46,39 @@ input:valid {
 input:invalid {
 	box-shadow: none;
 }
-input#radio{
-	width: 25em;
-	height: 1em;
 
+
+
+fieldset #billme{
+	width: 10em;
+	margin-left: 7.2em;
+}
+
+fieldset #CreditCard{
+	width: 10em;
+	
+}
+select#year {
+	width: 7em;
+	height: 1.5em;
+}
+
+select#month {
+	width: 7em;
+	height: 1.5em;
 }
 
 input#Submit {
-	width: 15.2em;
+	width: 10em;
+	margin-left: 7.2em;
 	height: 2em;
 }
 br {
     clear: both;
 }
-:required {
-	border: 2px solid #e8b417;
-}
+.required {
+border: 2px solid orange;}
+
 
 div#frame {
 	margin: 25px auto;
