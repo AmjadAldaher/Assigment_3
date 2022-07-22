@@ -47,17 +47,14 @@ input:invalid {
 	box-shadow: none;
 }
 
-
-
-fieldset #billme{
-	width: 10em;
-	margin-left: 7.2em;
+input[type="radio"]{
+	width: 20px;
+	margin-left: 30px;
+	height: 2em;
 }
 
-fieldset #CreditCard{
-	width: 10em;
-	
-}
+
+
 select#year {
 	width: 7em;
 	height: 1.5em;

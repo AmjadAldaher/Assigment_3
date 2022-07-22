@@ -45,19 +45,22 @@
 				
 				<!-- The first Fieldset with the member  -->
 				<fieldset>															
-			<legend> Member Information</legend>
+			<legend> Member Information</legend>     
+
+			<!-- labels with inputs to get infomation from the user  -->
+			
 			<label for="email"> E-Mail: </label>
 			<input type="text" name="email" id="email"><br>
 			<label for="firstname"> First Name: </label>
-			<input type="text" name="firstname" id="firstname" required=""><br>   
+			<input type="text" name="firstname" id="firstname" required=""><br>    <!-- i used required attribute to mark this part as importent    -->
 			<label for="lastname"> Last Name: </label> 
-			<input type="text" name="lastname" id="lastname" required=""><br>
+			<input type="text" name="lastname" id="lastname" required=""><br>     <!-- i used required attribute to mark this part as importent    -->
 			<label for="address"> Address:</label>
 			<input type="text" name="address" id="address" ><br>
 			<label for="City"> City: </label>
-			<input type="text" name="City" id="City" required=""><br>
+			<input type="text" name="City" id="City" required=""><br>   <!-- i used required attribute to mark this part as importent    -->
 			<label for="Province"> Province: </label>
-			<input type="text" name="Province" id="Province" maxlength="2" placeholder="2-Character code" required=""><br>
+			<input type="text" name="Province" id="Province" maxlength="2" placeholder="2-Character code" required=""><br>    <!-- i used required attribute to mark this part as importent, Placeholder to disply a messge to the ueer, and maxlength to limit the charcter     -->
 			<label for="PostalCode:"> Postal Code: </label>
 			<input type="text" name="PostalCode" id="PostalCode" maxlength="6" placeholder="6 Characters" ><br>
 			<label for="PhoneNumber:">Phone Number: </label>
@@ -65,8 +68,11 @@
 			</fieldset>
 			<fieldset>
 			
+			  <!-- Ordering infomation list will contain  the orders details   -->
 				<legend> Ordering Information</legend>
 				<label for="Event"> Event: </label>
+				  <!--  Selcet and Option    -->
+				
 					<select type="text" id="Event">
 						<option value="C">Cookie Decoration Contest</option>
 						<option value="T">Tree Decoration Contest</option>
@@ -76,6 +82,8 @@
 					
 
 				<label for="OrderType"> Order Type: </label>
+				
+				 <!--  Selcet and Option    -->
 					<select type="text" id="OrderType">
 						<option value="M">Member Package</option>
 						<option value="D">Donor Package</option>
@@ -84,17 +92,26 @@
 					<label for="NumberofTecketsr:">Number of Teckets: </label>
 					<input type="text" name="NumberofTecketsr" id="NumberofTecketsr" placeholder="Number of single tickets"><br>
 				</fieldset>
+				
+				
+				 <!--  Payment fieldset   -->
 					<fieldset>
 						<legend> Payment Method </legend>
+						
+						 <!--  Radio button     -->
 					<label for="BillME" id="billme"> Bill Me  </label>
 					<input type="radio" name="BillME" ><br>
 					<label for="CreditCard" id="CreditCard"> Credit Card  </label>
 					<input type="radio" name="CreditCard" ><br>
 					</fieldset>
 					
+					<!--  Payment fieldset   -->
+					
 					<fieldset>
 					<legend> Credit Card Information </legend>
 					<label for="CardType"> CardType:  </label>
+					
+					 <!--  Selcet and Option    -->
 					<select type="text" id="">
 						<option value="V">Visa</option>
 						<option value="M">Master Card</option>
@@ -105,6 +122,9 @@
 			<input type="text" name="CardNumber" id="CardNumber" placeholder="16 digits" required=""><br>
 			
 			<label for="ExpirationDate"> Expiration Date: </label>
+			
+			 <!--  Selcet and Option    -->
+			
 			<select type="month" id="month">
 						<option value="01">January</option>
 						<option value="02">February</option>
@@ -119,6 +139,9 @@
 						<option value="11">November</option>
 						<option value="12">December</option>on>
 						</select> 
+						
+						 <!--  Selcet and Option    -->
+						 
 				<select name="year" id="year">
 				
 		 <option value="2021">2021</option>
@@ -133,6 +156,9 @@
 				
 			
 			</fieldset>
+			
+					<!--  submition fieldset   -->
+					
 			<fieldset id="Submit">
 				<legend>Submit Your Data</legend>
 				<input type="submit" id="Submit" value="Submit">
